@@ -1,0 +1,485 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"func",
+				"anonymous function"
+			],
+			[
+				"key",
+				"keyword"
+			],
+			[
+				"r",
+				"rcc\tReact: legacy component"
+			],
+			[
+				"pro",
+				"props\tReact: this.props."
+			],
+			[
+				"root",
+				"rootElement"
+			],
+			[
+				"red",
+				"ReactDom"
+			],
+			[
+				"re",
+				"React"
+			],
+			[
+				"ex",
+				"export"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 129,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "pci",
+		"selected_items":
+		[
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"pcl",
+				"Package Control: List Packages"
+			],
+			[
+				"proma",
+				"Project Manager"
+			],
+			[
+				"gitgu",
+				"GitGutter: Compare Against Branch"
+			],
+			[
+				"git",
+				"Git: Track Remote Branch"
+			],
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			],
+			[
+				"git gu",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"jshi",
+				"JSHint"
+			],
+			[
+				"javascri",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jslint",
+				"JSLint"
+			],
+			[
+				"projema",
+				"Project Manager: Remove Project"
+			],
+			[
+				"project",
+				"Project Manager: Open Project"
+			],
+			[
+				"subo",
+				"SublimeBookmarks: Remove All Bookmarks (Clear Bookmarks)"
+			],
+			[
+				"addbo",
+				"SublimeBookmarks: Add Bookmark"
+			],
+			[
+				"sboo",
+				"SublimeBookmarks: Add Bookmark"
+			],
+			[
+				"boo",
+				"Bookmarks: Clear All"
+			],
+			[
+				"bok",
+				"Bookmarks: Toggle"
+			],
+			[
+				"co",
+				"Color Picker"
+			],
+			[
+				"prefix",
+				"Autoprefix CSS"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"control",
+				"Install Package Control"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 143.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/chauihyeon/git_project/WebDDtool/index.html",
+		"/Users/chauihyeon/git_project/WebDDtool/js/index.js",
+		"/Users/chauihyeon/git_project/WebDDtool/popup.html",
+		"/Users/chauihyeon/git_project/WebDDtool/css/index.less",
+		"/Users/chauihyeon/git_project/WebDDtool/manifest.json",
+		"/Users/chauihyeon/git_project/WebDDtool/readme.md",
+		"/Users/chauihyeon/git_project/WebDDtool/js/background.js",
+		"/Users/chauihyeon/Downloads/set_icon/manifest.json",
+		"/Users/chauihyeon/git_project/WebDDtool/js/popup.js",
+		"/Users/chauihyeon/Downloads/set_icon/background.js",
+		"/Users/chauihyeon/Downloads/set_icon/background.html",
+		"/Users/chauihyeon/Downloads/make_page_red/background.js",
+		"/Users/chauihyeon/Downloads/make_page_red/manifest.json",
+		"/Users/chauihyeon/Downloads/background-simple/manifest.json",
+		"/Users/chauihyeon/Downloads/background-simple/index.html",
+		"/Users/chauihyeon/Downloads/background-simple/index.js",
+		"/Users/chauihyeon/Downloads/background-simple/background.html",
+		"/Users/chauihyeon/Downloads/blank_ntp/manifest.json",
+		"/Users/chauihyeon/Downloads/blank_ntp/blank.html",
+		"/Users/chauihyeon/Downloads/basic/manifest.json",
+		"/Users/chauihyeon/Downloads/basic/content.js",
+		"/Users/chauihyeon/Downloads/basic/background.js",
+		"/Users/chauihyeon/Downloads/print/manifest.json",
+		"/Users/chauihyeon/Downloads/print/background.js",
+		"/Users/chauihyeon/Downloads/set_icon_path/background.js",
+		"/Users/chauihyeon/Downloads/set_icon_path/manifest.json",
+		"/Users/chauihyeon/git_project/WebDDtool/css/popup.less",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/Less2Css/less2css.sublime-settings",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/User/less2css.sublime-settings",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/User/Minify.sublime-settings",
+		"/usr/local/lib/node_modules/npm/package.json",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/Minify/Minify.sublime-settings",
+		"/Users/chauihyeon/git_project/WebDDtool/package.json",
+		"/Users/chauihyeon/git_project/WebDDtool/app.js",
+		"/Users/chauihyeon/git_project/WebDDtool/js/getSource.js",
+		"/Applications/mampstack-5.6.22-0/apache2/htdocs/backbone/index.js",
+		"/Applications/mampstack-5.6.22-0/apache2/htdocs/php/file_get_contents.json",
+		"/Applications/mampstack-5.6.22-0/apache2/htdocs/html/form.html",
+		"/Users/chauihyeon/git_project/react-tutorial/webpack.config.js",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/User/Projects/New Project.sublime-project",
+		"/Users/chauihyeon/git_project/react-tutorial/src/index.js",
+		"/Users/chauihyeon/git_project/react-tutorial/.jshintrc",
+		"/Users/chauihyeon/git_project/react-tutorial/node_modules/webpack-dev-server/node_modules/sockjs/lib/sockjs.js",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/User/JavaScript-Completions.sublime-settings",
+		"/Users/chauihyeon/git_project/react-tutorial/public/index.html",
+		"/Users/chauihyeon/git_project/react-tutorial/package.json",
+		"/Users/chauihyeon/git_project/react-tutorial/node_modules/babel-core/lib/helpers/resolve.js",
+		"/Users/chauihyeon/git_project/divlook/v2/index.php",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/User/snippet/console.log.sublime-snippet",
+		"/Users/chauihyeon/Library/Application Support/Sublime Text 3/Packages/LaTeX/Snippets/Cases.sublime-snippet"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"html5",
+			"module.hot",
+			"webpack-dev",
+			">\n",
+			"data"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								67,
+								67
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										46,
+										50
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										46,
+										50
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content"
+							],
+							"incomplete_sync": null,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 65.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 110.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "webCalc.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"indexjs",
+				"src/index.js"
+			],
+			[
+				"",
+				"package.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
