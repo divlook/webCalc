@@ -4,12 +4,36 @@
 		"selected_items":
 		[
 			[
-				"font",
-				"font-family"
+				"func",
+				"function with name"
 			],
 			[
-				"func",
-				"anonymous function"
+				"image",
+				"imageSize"
+			],
+			[
+				"attr",
+				"attr\t.attr() - single"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"split",
+				"split( separator: string, limit: int ): string\tString"
+			],
+			[
+				"fun",
+				"fun\tFunction"
+			],
+			[
+				"rea",
+				"ready\t$(document).ready"
+			],
+			[
+				"font",
+				"font-family"
 			],
 			[
 				"key",
@@ -47,23 +71,69 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 129,
+				"buffer_size": 7302,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/default.js",
+			"settings":
+			{
+				"buffer_size": 3268,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/default.less",
+			"settings":
+			{
+				"buffer_size": 599,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/lessc/lessc.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/lessc/lessc.sublime-build",
+					""
+				],
+				[
+					"Packages/lessc/lessc.sublime-build",
+					"Non-Minified"
+				]
+			],
+			[
+				"Packages/lessc/lessc.sublime-build",
+				""
+			]
+		]
 	],
 	"build_varint": "",
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "pci",
+		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"Snippet: log",
+				"Snippet: console.log"
+			],
+			[
+				"proma",
+				"Project Manager"
+			],
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			],
 			[
 				"pci",
 				"Package Control: Install Package"
@@ -73,20 +143,12 @@
 				"Package Control: List Packages"
 			],
 			[
-				"proma",
-				"Project Manager"
-			],
-			[
 				"gitgu",
 				"GitGutter: Compare Against Branch"
 			],
 			[
 				"git",
 				"Git: Track Remote Branch"
-			],
-			[
-				"pcr",
-				"Package Control: Remove Package"
 			],
 			[
 				"git gu",
@@ -149,7 +211,7 @@
 				"Install Package Control"
 			]
 		],
-		"width": 575.0
+		"width": 510.0
 	},
 	"console":
 	{
@@ -167,8 +229,24 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/F/차의현/Project/WebCalculator",
+		"/F/차의현/Project/WebCalculator/css",
+		"/F/차의현/Project/WebCalculator/js"
+	],
 	"file_history":
 	[
+		"/C/Users/CHACHA/AppData/Roaming/Sublime Text 3/Packages/User/console.log.sublime-snippet",
+		"/C/Users/CHACHA/AppData/Roaming/Sublime Text 3/Packages/User/Minify.sublime-settings",
+		"/C/Users/CHACHA/AppData/Roaming/Sublime Text 3/Packages/Minify/Minify.sublime-settings",
+		"/F/차의현/Project/WebCalculator/js/default.js",
+		"/F/차의현/Project/WebCalculator/css/default.css",
+		"/C/Users/CHACHA/AppData/Roaming/Sublime Text 3/Packages/Less2Css/less2css.sublime-settings",
+		"/C/Users/CHACHA/AppData/Roaming/Sublime Text 3/Packages/User/less2css.sublime-settings",
+		"/F/차의현/Project/WebCalculator/css/default.css.map",
+		"/C/Users/CHACHA/AppData/Roaming/Sublime Text 3/Packages/LESS/LESS.sublime-settings",
+		"/C/Users/CHACHA/AppData/Roaming/Sublime Text 3/Packages/User/LESS.sublime-settings",
 		"/Users/chauihyeon/git_project/WebDDtool/index.html",
 		"/Users/chauihyeon/git_project/WebDDtool/js/index.js",
 		"/Users/chauihyeon/git_project/WebDDtool/popup.html",
@@ -224,7 +302,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 70.0
 	},
 	"find_in_files":
 	{
@@ -238,6 +316,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$target",
+			"console",
+			".val().length",
+			"original",
+			"val()",
+			"original",
+			"Things",
+			"fn",
+			"debug",
+			"log",
+			"Things",
+			"chaFn",
+			"cha",
+			"chabot",
+			"lib",
+			"ImageSizeCalculator",
+			"col-lg-3",
+			"id",
 			"html5",
 			"module.hot",
 			"webpack-dev",
@@ -260,7 +356,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -269,15 +365,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 129,
+						"buffer_size": 7302,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								67,
-								67
+								2594,
+								2594
 							]
 						],
 						"settings":
@@ -289,15 +385,15 @@
 								{
 									"1":
 									[
-										46,
-										50
+										2594,
+										2595
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/tag.png",
+										"Packages/BracketHighlighter/icons/double_quote.png",
 										"brackethighlighter.default"
 									]
 								},
@@ -305,8 +401,8 @@
 								{
 									"1":
 									[
-										46,
-										50
+										2587,
+										2588
 									]
 								},
 								"unmatched":
@@ -315,51 +411,31 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
 								"bh_unmatched",
 								"bh_unmatched_center",
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -369,16 +445,303 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_round_content"
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"git_gutter_enabled": true,
 							"incomplete_sync": null,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"is_init_dirty_state": false,
+							"origPos":
+							[
+								0.0,
+								810.0
+							],
+							"origin_encoding": "UTF-8",
+							"syncScroll": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/default.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2895,
+								2895
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										2902,
+										2903
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1321,
+										1322
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"git_gutter_enabled": true,
+							"is_init_dirty_state": false,
+							"origPos":
+							[
+								0.0,
+								888.0
+							],
+							"origin_encoding": "UTF-8",
+							"syncScroll": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 888.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/default.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 599,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								284
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										286,
+										287
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										261,
+										262
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"git_gutter_enabled": true,
+							"is_init_dirty_state": false,
+							"origPos":
+							[
+								0.0,
+								0.0
+							],
+							"origin_encoding": "ASCII",
+							"syncScroll": false,
+							"syntax": "Packages/LESS/LESS.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -415,6 +778,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 138.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -427,7 +794,7 @@
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/lessc/lessc.sublime-build",
 	"project": "webCalc.sublime-project",
 	"replace":
 	{
