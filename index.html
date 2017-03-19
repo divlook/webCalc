@@ -19,6 +19,9 @@
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!-- Handlebars -->
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
+
     <!-- default -->
     <link rel="stylesheet" href="css/default.css">
     <script src="js/default.min.js" type="text/javascript"></script>
@@ -111,63 +114,36 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div id="ImageSize_history" class="col-lg-12">
                             <div class="panel panel-default">
-                                <div class="panel-heading">Result value</div>
-                                <div class="panel-body">
-                                    <div class="col-xs-6 col-lg-6">
-                                        <div class="input-group">
-                                            <input type="number" class="form-control" name="originalWidth" placeholder="width">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default" type="button" data-toggle="buttons">
-                                                    <input type="checkbox" autocomplete="off" hidden name="originalWidthCheck">
-                                                    <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-lg-6">
-                                        <div class="input-group">
-                                            <input type="number" class="form-control" name="originalHeight" placeholder="height">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default" type="button" data-toggle="buttons">
-                                                    <input type="checkbox" autocomplete="off" hidden name="originalHeightCheck">
-                                                    <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">History</div>
-                                <div class="panel-body">
-                                    <div class="col-xs-6 col-lg-6">
-                                        <div class="input-group">
-                                            <input type="number" class="form-control" name="originalWidth" placeholder="width">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default" type="button" data-toggle="buttons">
-                                                    <input type="checkbox" autocomplete="off" hidden name="originalWidthCheck">
-                                                    <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-lg-6">
-                                        <div class="input-group">
-                                            <input type="number" class="form-control" name="originalHeight" placeholder="height">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default" type="button" data-toggle="buttons">
-                                                    <input type="checkbox" autocomplete="off" hidden name="originalHeightCheck">
-                                                    <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="panel-heading">History list</div>
+                                <div class="emptyList">Empty! please enter a value</div>
+                                <table class="table table-bordered table-hover hidden">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Original width</th>
+                                            <th>Original height</th>
+                                            <th>Target width</th>
+                                            <th>Target height</th>
+                                            <th>Decimal point</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <script id="ImageSize_historyList" type="text/x-handlebars-template">
+                                            {{#historyList}}
+                                            <tr class="success">
+                                                <th>{{no}}</th>
+                                                <td class="originalWidth">{{originalWidth}}</td>
+                                                <td class="originalHeight">{{originalHeight}}</td>
+                                                <td class="targetWidth">{{targetWidth}}</td>
+                                                <td class="targetHeight">{{targetHeight}}</td>
+                                                <td class="decimalPoint">{{decimalPoint}}</td>
+                                            </tr>
+                                            {{/historyList}}
+                                        </script>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
 
