@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "handlebars": "^4.0.6",
     "normalize.css": "^5.0.0"
   },
   "devDependencies": {
