@@ -99,6 +99,60 @@
 							}
 
 						});
+
+					}
+				}
+			}
+		},
+		handlebars: {
+			index: {
+				article: {
+					imageSize: function() {
+						//핸들바 템플릿 가져오기
+						var source = $("#ImageSize_historyList").html();
+
+						//핸들바 템플릿 컴파일
+						var template = Handlebars.compile(source);
+
+						//핸들바 템플릿에 바인딩할 데이터
+						var data = {
+							historyList: [
+								{
+									'no': 1,
+									'originalWidth': 1920,
+									'originalHeight': 1080,
+									'targetWidth': 16,
+									'targetHeight': 9,
+									'decimalPoint': 0,
+								}
+							]
+						};
+
+						var $ImageSize_history = $('#ImageSize_history');
+
+						if (data.historyList.length > 0) {
+							if (!$ImageSize_history.find('.emptyList').hasClass('hidden')) {
+								$ImageSize_history.find('.emptyList').addClass('hidden');
+							}
+							if ($ImageSize_history.find('table').hasClass('hidden')) {
+								$ImageSize_history.find('table').removeClass('hidden');
+							}
+							$ImageSize_history.find('tr.success').removeClass('success');
+						} else {
+							if ($ImageSize_history.find('.emptyList').hasClass('hidden')) {
+								$ImageSize_history.find('.emptyList').removeClass('hidden');
+							}
+							if (!$ImageSize_history.find('table').hasClass('hidden')) {
+								$ImageSize_history.find('table').addClass('hidden');
+							}
+						}
+
+						//핸들바 템플릿에 데이터를 바인딩해서 HTML 생성
+						var html = template(data);
+
+
+						//생성된 HTML을 DOM에 주입
+						$ImageSize_history.find('table tbody').append(html);
 					}
 				}
 			}
@@ -126,6 +180,7 @@
 		webCalcFn.ready();
 		// #ImageSize
 		webCalcFn.page.index.article.imageSize();
+		webCalcFn.handlebars.index.article.imageSize();
 
 	});
 
