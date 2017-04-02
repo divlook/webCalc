@@ -19,7 +19,6 @@
 		imageSize: {
 			init: function() {
 
-						
 				var $ImageSize = $('#ImageSize');
 				var $ImageSize_history = $('#ImageSize_history');
 
@@ -36,18 +35,21 @@
 				var $targetHeightNumber;
 				var $pointNumber;
 
-				// checkbox
-				var $originalWidthCheck = $ImageSize.find('input[name="originalWidthCheck"]');
-				var $originalHeightCheck = $ImageSize.find('input[name="originalHeightCheck"]');
-				var $targetWidthCheck = $ImageSize.find('input[name="targetWidthCheck"]');
-				var $targetHeightCheck = $ImageSize.find('input[name="targetHeightCheck"]');
-
+				// data
 				var ImageSize_data = {
 					historyList: []
 				}
 				if (localStorage.getItem('ImageSize_historyList')) {
 					ImageSize_data = webCalcFn.storage.get('ImageSize_historyList');
 				}
+
+				// Localstorage에 data가 있을 때
+				if (ImageSize_data.historyList.length > 0) {
+					webCalcFn.handlebars.imageSize(ImageSize_data);
+				}
+
+
+				// 이벤트
 
 				// 키 입력되었을 때 이미지 사이즈 계산하기
 				$ImageSize.on('keyup change', 'input[type="number"]', function() {
@@ -103,11 +105,7 @@
 
 				});
 
-				// Localstorage에 data가 있을 때
-				if (ImageSize_data.historyList.length > 0) {
-					webCalcFn.handlebars.imageSize(ImageSize_data);
-				}
-
+				// 저장이벤트
 				$ImageSize.on('click submit', '.btn-success', function(event) {
 					event.preventDefault();
 
@@ -133,14 +131,39 @@
 					webCalcFn.handlebars.imageSize(result);
 
 				});
+
+				// 삭제 이벤트
+				$ImageSize.on('click', '.btn-danger', function(event) {
+					event.preventDefault();
+					
+					// historyList 저장소에서 삭제
+					webCalcFn.storage.remove('ImageSize_historyList');
+
+					// data reset
+					ImageSize_data.historyList = [];
+
+					// count reset
+					webCalcFn.imageSize.count = 0;
+
+					// Table reset
+					webCalcFn.handlebars.imageSize('reset');
+				});
+
 			},
 			fn: {
 				emptyCheck: function () {
 					// 데이터가 있을 때, 없을 때 처리
 
 					var $ImageSize_history = $('#ImageSize_history');
+					var ImageSize_data = {
+						historyList: []
+					}
 
-					if (webCalcFn.storage.get('ImageSize_historyList').historyList.length > 0) {
+					if (localStorage.getItem('ImageSize_historyList')) {
+						ImageSize_data = JSON.parse(localStorage.getItem('ImageSize_historyList'));
+					}
+
+					if (ImageSize_data.historyList.length > 0) {
 
 						if (!$ImageSize_history.find('.emptyList').hasClass('hidden')) {
 							$ImageSize_history.find('.emptyList').addClass('hidden');
@@ -164,12 +187,24 @@
 
 		handlebars: {
 			imageSize: function(data) {
-				var arr = {
+
+				var arr; // 함수 안 data
+				var $ImageSize_history = $('#ImageSize_history');
+				var handlebars_ImageIsze_source;
+				var handlebars_ImageIsze_template;
+				var html;
+
+				arr = {
 					historyList: []
 				};
-				var type = '';
 
-				if (data) {
+				if (data === 'reset') {
+					$ImageSize_history.find('table tbody > tr').remove();
+
+					// 데이터가 있을 때, 없을 때 처리
+					webCalcFn.imageSize.fn.emptyCheck();
+				} else {
+					
 					if (!data.historyList) {
 						arr.historyList.push(data);
 					} else {
@@ -180,28 +215,27 @@
 					arr.historyList.sort(function(a, b){
 						return b.no - a.no;
 					});
-				}
 
-				var $ImageSize_history = $('#ImageSize_history');
+					//핸들바 템플릿 가져오기
+					handlebars_ImageIsze_source = $("#ImageSize_historyList").html();
+
+					//핸들바 템플릿 컴파일
+					handlebars_ImageIsze_template = Handlebars.compile(handlebars_ImageIsze_source);
+
+					//핸들바 템플릿에 데이터를 바인딩해서 HTML 생성
+					html = handlebars_ImageIsze_template(arr);
+
+					// 데이터가 있을 때, 없을 때 처리
+					webCalcFn.imageSize.fn.emptyCheck();
+
+					//생성된 HTML을 DOM에 주입
+					$ImageSize_history.find('table tbody').prepend(html);
+
+					if (webCalcFn.imageSize.count === 0) {
+						$ImageSize_history.find('tr.success').removeClass('success');
+					}
+				}
 				
-				//핸들바 템플릿 가져오기
-				var handlebars_ImageIsze_source = $("#ImageSize_historyList").html();
-
-				//핸들바 템플릿 컴파일
-				var handlebars_ImageIsze_template = Handlebars.compile(handlebars_ImageIsze_source);
-
-				//핸들바 템플릿에 데이터를 바인딩해서 HTML 생성
-				var html = handlebars_ImageIsze_template(arr);
-
-				// 데이터가 있을 때, 없을 때 처리
-				webCalcFn.imageSize.fn.emptyCheck();
-
-				//생성된 HTML을 DOM에 주입
-				$ImageSize_history.find('table tbody').prepend(html);
-
-				if (webCalcFn.imageSize.count === 0) {
-					$ImageSize_history.find('tr.success').removeClass('success');
-				}
 				webCalcFn.imageSize.count++;
 			}
 		},
@@ -216,19 +250,12 @@
 			},
 			get: function (name) {
 				return JSON.parse(localStorage.getItem(name));
+			},
+			remove: function (name) {
+				localStorage.removeItem(name);
 			}
 		},
 
-
-		// test
-		test: function() {
-			alert('test');
-		},
-		one: {
-			two : function() {
-				alert('test');
-			}
-		}
 	};
 
 
