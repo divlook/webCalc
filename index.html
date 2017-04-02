@@ -32,13 +32,13 @@
     <div class="container">
 
         <header class="page-header">
-            <h1>Web calculator <small>웹 계산기</small></h1>
+            <h1>Web calculator</h1>
         </header>
 
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#ImageSize" aria-controls="ImageSize" role="tab" data-toggle="tab">Image Size</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">단위계산기</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">문자변환기</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">px2em</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Encoder</a></li>
         </ul>
 
         <section class="tab-content">
@@ -53,25 +53,13 @@
                                 <div class="panel-heading">Original value</div>
                                 <div class="panel-body">
                                     <div class="col-xs-6 col-lg-6">
-                                        <div class="input-group">
+                                        <div class="form-group">
                                             <input type="number" class="form-control" name="originalWidth" placeholder="width">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default" type="button" data-toggle="buttons">
-                                                    <input type="checkbox" autocomplete="off" hidden name="originalWidthCheck">
-                                                    <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-lg-6">
-                                        <div class="input-group">
+                                        <div class="form-group">
                                             <input type="number" class="form-control" name="originalHeight" placeholder="height">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default" type="button" data-toggle="buttons">
-                                                    <input type="checkbox" autocomplete="off" hidden name="originalHeightCheck">
-                                                    <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -83,36 +71,24 @@
                                 <div class="panel-heading">Target value</div>
                                 <div class="panel-body">
                                     <div class="col-xs-6 col-lg-6">
-                                        <div class="input-group">
+                                        <div class="form-group">
                                             <input type="number" class="form-control" name="targetWidth" placeholder="width">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default" type="button" data-toggle="buttons">
-                                                    <input type="checkbox" autocomplete="off" hidden name="targetWidthCheck">
-                                                    <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-lg-6">
-                                        <div class="input-group">
+                                        <div class="form-group">
                                             <input type="number" class="form-control" name="targetHeight" placeholder="height">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default" type="button" data-toggle="buttons">
-                                                    <input type="checkbox" autocomplete="off" hidden name="targetHeightCheck">
-                                                    <span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span>
-                                                </button>
-                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6">
                                         <div class="input-group">
                                             <div class="input-group-addon">Decimal point</div>
-                                            <input type="number" class="form-control" name="point">
+                                            <input type="number" class="form-control" name="point" min="0" max="4">
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-sm-6 text-right">
-                                        <button type="button" class="btn btn-success">Save</button>
-                                        <button type="button" class="btn btn-warning">Reset</button>
+                                        <button type="submit" class="btn btn-success">Save</button>
+                                        <button type="reset" class="btn btn-warning">Reset</button>
                                         <button type="button" class="btn btn-danger">Delete</button>
                                     </div>
                                 </div>
@@ -158,13 +134,11 @@
             </article>
 
             <article role="tabpanel" class="tab-pane" id="profile">
-                em2px
-                px2em
+                null
             </article>
 
             <article role="tabpanel" class="tab-pane" id="messages">
-                encodeURI
-                decodeURI
+                null
             </article>
 
         </section>
