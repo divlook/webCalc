@@ -7,13 +7,10 @@
 */
 
 ;(function(window, document){
-	
-	var window = window;
-	var document = document;
 
 	var $window = $(window);
 	var $document = $(document);
-	
+
 	var webCalcFn = {
 
 		imageSize: {
@@ -38,7 +35,7 @@
 				// data
 				var ImageSize_data = {
 					historyList: []
-				}
+				};
 				if (localStorage.getItem('ImageSize_historyList')) {
 					ImageSize_data = webCalcFn.storage.get('ImageSize_historyList');
 				}
@@ -64,7 +61,8 @@
 					// 소수점 입력 값이 0보다 작을 때 삭제
 					if ( $pointNumber < 0 || $pointNumber > 4) {
 						alert('소수점은 0~4까지\nDecimal point between 0 and 4');
-						return this.value = '';
+						this.value = '';
+						return this.vlaue;
 					}
 
 					// Target value 중 하나 입력되면 다른 Target value 삭제
@@ -121,7 +119,7 @@
 						targetWidth: $targetWidthNumber,
 						targetHeight: $targetHeightNumber,
 						decimalPoint: $pointNumber,
-					}
+					};
 					ImageSize_data.historyList.push(result);
 
 					// localstorage에 저장
@@ -135,7 +133,7 @@
 				// 삭제 이벤트
 				$ImageSize.on('click', '.btn-danger', function(event) {
 					event.preventDefault();
-					
+
 					// historyList 저장소에서 삭제
 					webCalcFn.storage.remove('ImageSize_historyList');
 
@@ -157,7 +155,7 @@
 					var $ImageSize_history = $('#ImageSize_history');
 					var ImageSize_data = {
 						historyList: []
-					}
+					};
 
 					if (localStorage.getItem('ImageSize_historyList')) {
 						ImageSize_data = JSON.parse(localStorage.getItem('ImageSize_historyList'));
@@ -204,7 +202,7 @@
 					// 데이터가 있을 때, 없을 때 처리
 					webCalcFn.imageSize.fn.emptyCheck();
 				} else {
-					
+
 					if (!data.historyList) {
 						arr.historyList.push(data);
 					} else {
@@ -235,7 +233,7 @@
 						$ImageSize_history.find('tr.success').removeClass('success');
 					}
 				}
-				
+
 				webCalcFn.imageSize.count++;
 			}
 		},
@@ -275,6 +273,3 @@
 	// 외부로 노출
 	window.webCalcFn = webCalcFn;
 })(window, document);
-	
-
-
