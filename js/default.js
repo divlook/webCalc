@@ -183,6 +183,26 @@
 			count: 0
 		},
 
+		encoder: {
+			init: function() {
+				var $encoder = $('#encoder');
+				var $textarea = $encoder.find('textarea');
+				var $btn_encode = $encoder.find('.btn.encode');
+				var $btn_decode = $encoder.find('.btn.decode');
+				$btn_encode.on('click', function(event) {
+					event.preventDefault();
+					$textarea.val(encodeURIComponent($textarea.val()));
+				});
+				$btn_decode.on('click', function(event) {
+					event.preventDefault();
+					$textarea.val(decodeURIComponent($textarea.val()));
+				});
+			},
+			fn: function() {
+
+			}
+		},
+
 		handlebars: {
 			imageSize: function(data) {
 
@@ -264,6 +284,8 @@
 
 		// #ImageSize
 		webCalcFn.imageSize.init();
+		// #Encode
+		webCalcFn.encoder.init();
 
 	});
 

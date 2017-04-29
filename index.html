@@ -24,7 +24,7 @@
 
     <!-- default -->
     <link rel="stylesheet" href="./css/default.css">
-    <script src="js/default.min.js" type="text/javascript"></script>
+    <script src="js/default.js" type="text/javascript"></script>
 
     <!-- 구글 통계 -->
     <script>
@@ -78,8 +78,8 @@
 
         <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#ImageSize" aria-controls="ImageSize" role="tab" data-toggle="tab">Image Size</a></li>
-            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">px2em</a></li>
-            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Encoder</a></li>
+            <li role="presentation"><a href="#px2em" aria-controls="px2em" role="tab" data-toggle="tab">px2em</a></li>
+            <li role="presentation"><a href="#encoder" aria-controls="encoder" role="tab" data-toggle="tab">Encoder</a></li>
         </ul>
 
         <section class="tab-content">
@@ -174,12 +174,56 @@
 
             </article>
 
-            <article role="tabpanel" class="tab-pane" id="profile">
-                null
+            <article role="tabpanel" class="tab-pane" id="px2em">
+                준비중
+                <!-- <form action="">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Original value</div>
+                                <div class="panel-body">
+                                    <div class="col-xs-6 col-lg-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="originalWidth" placeholder="width">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-lg-6">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control" name="originalHeight" placeholder="height">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 text-right">
+                                        <button type="submit" class="btn btn-success">Save</button>
+                                        <button type="reset" class="btn btn-warning">Reset</button>
+                                        <button type="button" class="btn btn-danger">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </form> -->
             </article>
 
-            <article role="tabpanel" class="tab-pane" id="messages">
-                null
+            <article role="tabpanel" class="tab-pane" id="encoder">
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Please enter text</div>
+                                <div class="panel-body">
+                                    <div class="col-xs-12">
+                                        <div class="form-group">
+                                            <textarea name="name" rows="8" cols="80" style="resize:vertical" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 text-right">
+                                        <button type="button" class="btn btn-success encode">Encode</button>
+                                        <button type="button" class="btn btn-danger decode">Decode</button>
+                                        <button type="reset" class="btn btn-default"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </form>
             </article>
 
         </section>
