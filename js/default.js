@@ -203,6 +203,59 @@
 			}
 		},
 
+		px2em: {
+			init: function() {
+				var article = $('#px2em');
+				var $px2em = new webCalcFn.px2em.fn.article('.px2em', article);
+				var $em2px = new webCalcFn.px2em.fn.article('.em2px', article);
+
+				var $data = {
+					px2em: $px2em,
+					em2px: $em2px
+				};
+
+				$data.px2em.input.value.on('keyup', function(event) {
+					event.preventDefault();
+					webCalcFn.px2em.fn.calcValue(this, 'px2em', $data);
+				});
+
+				$data.em2px.input.value.on('keyup', function(event) {
+					event.preventDefault();
+					webCalcFn.px2em.fn.calcValue(this, 'em2px', $data);
+				});
+			},
+			fn: {
+				article: function(selector, article) {
+					this.selector = selector;
+					this.form = article.find(selector);
+					this.input = {
+						root: this.form.find('input[name="root"]'),
+						value: this.form.find('input[name="value"]'),
+						result: this.form.find('input[name="result"]'),
+					};
+				},
+				calcValue: function(el, article, $data) {
+					if ( isNaN(el.value) ) return false;
+
+					var root = $data[article].input.root.val() || 16;
+					var result;
+					switch (article) {
+						case 'px2em':
+							result = el.value / root;
+							result += 'em';
+							break;
+						case 'em2px':
+							result = el.value * root;
+							result += 'px';
+							break;
+						default:
+							break;
+					}
+					$data[article].input.result.val(result);
+				}
+			}
+		},
+
 		handlebars: {
 			imageSize: function(data) {
 
@@ -286,6 +339,8 @@
 		webCalcFn.imageSize.init();
 		// #Encode
 		webCalcFn.encoder.init();
+		// #px2em
+		webCalcFn.px2em.init();
 
 	});
 
